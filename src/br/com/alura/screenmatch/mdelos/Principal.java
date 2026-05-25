@@ -20,5 +20,6 @@ public class Principal {
         serie.setAtiva(false);
         serie.setEpisodiosPorTemporada(8);
         serie.setIncluidoNoPlano(true);
+        Serie serie1 = new Serie();
     }
 }

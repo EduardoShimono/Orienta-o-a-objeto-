@@ -1,3 +1,5 @@
+package exercicios;
+
 public class ContaBancaria {
     private int numConta;
     private double saldo;

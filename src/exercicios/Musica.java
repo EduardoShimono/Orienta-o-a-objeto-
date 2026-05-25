@@ -1,3 +1,5 @@
+package exercicios;
+
 public class Musica {
     String titulo;
     String artista;

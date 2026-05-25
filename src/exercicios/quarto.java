@@ -1,3 +1,5 @@
+package exercicios;
+
 public class quarto {
     public static void main(String[] args) {
         Musica musica1 = new Musica();

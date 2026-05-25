@@ -1,3 +1,5 @@
+package exercicios;
+
 public class sexto {
     public static void main(String[] args) {
         Aluno aluno1 = new Aluno();
