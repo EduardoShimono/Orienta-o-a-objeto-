@@ -1,5 +1,7 @@
 package br.com.alura.screenmatch.mdelos;
 
+import javax.swing.*;
+
 public class Principal {
     public static void main(String[] args) {
       Filme filme1 = new Filme();
@@ -21,5 +23,6 @@ public class Principal {
         serie.setEpisodiosPorTemporada(8);
         serie.setIncluidoNoPlano(true);
         Serie serie1 = new Serie();
+        Filme filme2 = new Filme();
     }
 }
