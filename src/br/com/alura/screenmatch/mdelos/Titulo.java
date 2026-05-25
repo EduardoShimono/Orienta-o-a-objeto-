@@ -1,4 +1,6 @@
-public class Filme {
+package br.com.alura.screenmatch.mdelos;
+
+public class Titulo {
     String nome;
     private int anoDeLancamento;
     private int duracaoEmMinutos;
@@ -7,9 +9,9 @@ public class Filme {
     private int totalDeAvaliacoes;
 
     public void exibeFichaTecnica (){
-        System.out.println("O nome do filme é " + nome);
+        System.out.println("O nome do titulo é " + nome);
         System.out.println("O ano de lançamento é " + anoDeLancamento);
-        System.out.println("a duração do filme em minutos é de " + duracaoEmMinutos);
+        System.out.println("a duração do titulo em minutos é de " + duracaoEmMinutos);
         System.out.println("Incluido no plano:" + incluidoNoPlano);
     }
     public void avaliar (double nota){
