@@ -24,11 +24,20 @@ public class Principal {
         serie.setEpisodiosPorTemporada(10);
         serie.setMinutosPorEpisodio(45);
 
+        Animacao ani = new Animacao();
+        ani.setNome("toy story");
+        ani.setAnoDeLancamento(1990);
+        ani.setIncluidoNoPlano(true);
+        ani.setDuracaoEmMinutos(180);
+        ani.exibeFichaTecnica();
+
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(favorito);
         calculadora.inclui(outro);
         calculadora.inclui(serie);
+        calculadora.inclui(ani);
 
-        System.out.println("Tempo total: " +calculadora.getTempoTotal());
+        System.out.println("Tempo total: " + calculadora.getTempoTotal());
+
     }
 }
