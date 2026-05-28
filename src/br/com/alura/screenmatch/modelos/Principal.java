@@ -43,8 +43,6 @@ public class Principal {
 
         System.out.println("Tempo total: " + calculadora.getTempoTotal());
 
-
-
         Episodio episodio = new Episodio();
         episodio.setNumero(1);
         episodio.setSerie(serie);

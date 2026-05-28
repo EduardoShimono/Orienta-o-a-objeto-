@@ -1,5 +1,4 @@
 package br.com.alura.screenmatch.modelos;
-
 import br.com.alura.screenmatch.modelos.calculo1.Classificavel;
 
 public class Filme extends Titulo implements Classificavel {

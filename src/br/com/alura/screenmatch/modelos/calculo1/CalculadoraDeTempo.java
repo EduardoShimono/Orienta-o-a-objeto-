@@ -1,5 +1,4 @@
 package br.com.alura.screenmatch.modelos.calculo1;
-
 import br.com.alura.screenmatch.modelos.Titulo;
 
 public class CalculadoraDeTempo {
