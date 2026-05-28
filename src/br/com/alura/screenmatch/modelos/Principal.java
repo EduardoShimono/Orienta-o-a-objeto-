@@ -1,5 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 import br.com.alura.screenmatch.modelos.calculo1.CalculadoraDeTempo;
+import br.com.alura.screenmatch.modelos.calculo1.FiltroRecomendacao;
 
 public class Principal {
     public static void main(String[] args) {
@@ -8,6 +9,9 @@ public class Principal {
         favorito.setAnoDeLancamento(1999);
         favorito.setDuracaoEmMinutos(135);
         favorito.setIncluidoNoPlano(true);
+        favorito.avaliar(10);
+        favorito.avaliar(7);
+        favorito.avaliar(5);
 
         Filme outro = new Filme();
         outro.setNome("John Wick");
@@ -38,6 +42,18 @@ public class Principal {
         calculadora.inclui(ani);
 
         System.out.println("Tempo total: " + calculadora.getTempoTotal());
+
+
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(serie);
+        episodio.setTotalVisualizacoes(300);
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(favorito);
+        filtro.filtra(episodio);
+        filtro.filtra(outro);
 
     }
 }
