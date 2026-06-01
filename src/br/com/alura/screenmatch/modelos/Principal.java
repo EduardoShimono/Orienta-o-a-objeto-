@@ -61,11 +61,12 @@ public class Principal {
         filmeDoEduardo.setDuracaoEmMinutos(115);
         filmeDoEduardo.setIncluidoNoPlano(true);
 
-        ArrayList<Filme> filmes = new ArrayList<>();
-        filmes.add(filmeDoEduardo);
-        filmes.add(favorito);
-        filmes.add(outro);
-        System.out.println("Tamanho da lista: " + filmes.size());
-        System.out.println("Primeiro Filme: " + filmes.get(0).getNome());
+        ArrayList<Titulo> titulos = new ArrayList<>();
+        titulos.add(filmeDoEduardo);
+        titulos.add(favorito);
+        titulos.add(outro);
+        titulos.add(serie);
+        System.out.println("Tamanho da lista: " + titulos.size());
+        System.out.println("Primeiro Titulo: " + titulos.get(0).getNome());
     }
 }
