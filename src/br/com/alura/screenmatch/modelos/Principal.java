@@ -2,6 +2,8 @@ package br.com.alura.screenmatch.modelos;
 import br.com.alura.screenmatch.modelos.calculo1.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.calculo1.FiltroRecomendacao;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme favorito = new Filme();
@@ -53,5 +55,17 @@ public class Principal {
         filtro.filtra(episodio);
         filtro.filtra(outro);
 
+        var filmeDoEduardo = new Filme();
+        filmeDoEduardo.setNome("Fome De Poder");
+        filmeDoEduardo.setAnoDeLancamento(2024);
+        filmeDoEduardo.setDuracaoEmMinutos(115);
+        filmeDoEduardo.setIncluidoNoPlano(true);
+
+        ArrayList<Filme> filmes = new ArrayList<>();
+        filmes.add(filmeDoEduardo);
+        filmes.add(favorito);
+        filmes.add(outro);
+        System.out.println("Tamanho da lista: " + filmes.size());
+        System.out.println("Primeiro Filme: " + filmes.get(0).getNome());
     }
 }
