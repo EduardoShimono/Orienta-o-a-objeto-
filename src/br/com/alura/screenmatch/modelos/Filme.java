@@ -5,6 +5,10 @@ import org.w3c.dom.ls.LSOutput;
 public class Filme extends Titulo implements Classificavel {
 private String diretor;
 
+    public Filme(String nome){
+        this.setNome(nome);
+    }
+
     public String getDiretor() {
         return diretor;
     }

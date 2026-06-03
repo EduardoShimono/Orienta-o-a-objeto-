@@ -6,8 +6,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme favorito = new Filme();
-        favorito.setNome("The Matrix");
+        Filme favorito = new Filme("The Matrix");
         favorito.setAnoDeLancamento(1999);
         favorito.setDuracaoEmMinutos(135);
         favorito.setIncluidoNoPlano(true);
@@ -15,8 +14,7 @@ public class Principal {
         favorito.avaliar(7);
         favorito.avaliar(5);
 
-        Filme outro = new Filme();
-        outro.setNome("John Wick");
+        Filme outro = new Filme("John Wick");
         outro.setAnoDeLancamento(2014);
         outro.setDuracaoEmMinutos(101);
         outro.setIncluidoNoPlano(true);
@@ -55,8 +53,7 @@ public class Principal {
         filtro.filtra(episodio);
         filtro.filtra(outro);
 
-        var filmeDoEduardo = new Filme();
-        filmeDoEduardo.setNome("Fome De Poder");
+        var filmeDoEduardo = new Filme("Fome De Poder");
         filmeDoEduardo.setAnoDeLancamento(2024);
         filmeDoEduardo.setDuracaoEmMinutos(115);
         filmeDoEduardo.setIncluidoNoPlano(true);
