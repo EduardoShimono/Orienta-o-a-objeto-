@@ -19,7 +19,7 @@ public class PrincipalComLista {
         lista.add(outro);
         lista.add(serie);
         for (Titulo item : lista) {
-
+            System.out.println(item);
         }
     }
 }
