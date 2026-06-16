@@ -5,6 +5,7 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComLista {
     public static void main(String[] args) {
@@ -29,5 +30,16 @@ public class PrincipalComLista {
                 System.out.println("Classificação " + ((Filme) item).getClassificacao());
             }
         }
+
+        ArrayList<String> buscaDeArtistas = new ArrayList<>();
+        buscaDeArtistas.add("Eduardo");
+        buscaDeArtistas.add("John wick");
+        buscaDeArtistas.add("Elton john");
+
+        Collections.sort(buscaDeArtistas);
+        System.out.println(buscaDeArtistas);
+
+        Collections.sort(lista);
+        System.out.println(lista);
     }
 }
