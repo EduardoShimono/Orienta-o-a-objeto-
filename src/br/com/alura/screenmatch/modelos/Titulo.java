@@ -8,11 +8,6 @@ public class Titulo implements Comparable<Titulo> {
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
 
-    @Override
-    public String toString() {
-        return "Titulo: " + this.getNome() + "(" + this.getAnoDeLancamento() + ")";
-    }
-
     public Titulo(String nome, int anoDeLancamento) {
         this.nome = nome;
         this.anoDeLancamento = anoDeLancamento;
