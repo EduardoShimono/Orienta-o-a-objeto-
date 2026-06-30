@@ -18,8 +18,6 @@ public class PrincipalComLista {
         filmeDoEduardo.avaliar(10);
         Serie serie = new Serie("La Casa de Papel", 2017);
 
-        Filme f1 = filmeDoEduardo;
-
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(filmeDoEduardo);
         lista.add(favorito);
@@ -28,7 +26,7 @@ public class PrincipalComLista {
         for (Titulo item : lista) {
             System.out.println(item.getNome());
             if (item instanceof Filme filme && filme.getClassificacao() > 2){
-                System.out.println("Classificação " + ((Filme) item).getClassificacao());
+                System.out.println("Classificação " + filme.getClassificacao());
             }
         }
 

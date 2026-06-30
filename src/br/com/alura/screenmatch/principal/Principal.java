@@ -54,9 +54,9 @@ public class Principal {
         filmes.add(favorito);
         filmes.add(outro);
         System.out.println("Tamanho da lista: " + filmes.size());
-        System.out.println("Primeiro Filme: " + filmes.get(0).getNome());
+        System.out.println("Primeiro Filme: " + filmes.getFirst().getNome());
         System.out.println(filmes);
-        System.out.println(filmes.get(0).toString());
+        System.out.println(filmes.getFirst().toString());
 
         System.out.println();
     }
